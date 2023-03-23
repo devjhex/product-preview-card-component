@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="https://kit.fontawesome.com/7666dfc9fb.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 16px; 
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    }
+    .attribution a { 
+      color: hsl(4, 98%, 47%);
+      text-decoration: none;
+    }
+    .attribution a:hover{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+      <section class="card">
+        <figure class="card__img-container">
+            <img src="images/image-product-mobile.jpg" alt="Perfume-Product-Image" class="card__img card__img_mobile">
+            <img src="images/image-product-desktop.jpg" media="(min-width:800px)" class="card__img card__img_desktop">
+        </figure>
+        <div class="card__img-caption">Perfume</div>
+        <h1 class="card__product-heading">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+          <div class="card__price-tag-all">
+            <span class="card__price-tag_big">$149.99</span>
+            <span class="card__price-tag_small">$169.99</span>
+          </div>
+        
+        <button class="button" type="button"><span class="fa-solid fa-cart-shopping button__icon"></span> Add to Cart</button>
+      </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dev-Jhex</a>.
+  </div>
+</body>
+</html>

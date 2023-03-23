@@ -1,0 +1,13 @@
+@import "resets";
+@import "config";
+@import "mobile";
+
+@mixin border-radius {
+    border-radius: 10px;
+}
+
+body{
+ background-color: $cream;
+}
+
+@import "desktop"

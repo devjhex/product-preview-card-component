@@ -1,0 +1,83 @@
+
+@import "config";
+.card{
+    width: 340px;
+    height: 610px;
+    background-color: $white;
+    margin: 30px auto;
+    @include border-radius;
+
+    &__img-container{
+        @include border-radius;
+    }
+    &__img_desktop{
+        display: none;
+    }
+    &__img{
+        max-inline-size: 100%;
+        block-size: auto;
+       border-radius: 10px 10px 0 0;
+       margin-bottom: 10px;
+    }
+    &__img-caption{
+        font-family: $font-two;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $dark-grayish-blue;
+        letter-spacing: 4px;
+        padding: 20px;
+    }
+    &__product-heading{
+        padding: 0 20px 20px 10px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__product-description{
+        font-size: $paragraph-size;
+        font-family: $font-two;
+        color: $dark-grayish-blue;
+        padding: 0 20px 10px 20px;
+        line-height: 1.5;
+    }
+    &__price-tag-all{
+        display: flex;
+        align-items: center;
+    }
+    &__price-tag_big{
+        display: block;
+        font-family: $font-one;
+        font-size: 2rem;
+        color: $dark-cyan;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__price-tag_small{
+        display: block;
+        font-size: 1rem;
+        font-family: $font-two;
+        text-decoration: line-through;
+        color: $dark-grayish-blue;
+    }
+  .button{
+    display: block;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    margin: 15px auto;
+    border: none;
+    font-family: $font-two;
+    border-radius: 5px;
+    background-color: $dark-cyan;
+    color: $white;
+     
+    &__icon{
+        margin-right: 5px;
+    }
+   
+    &:hover{
+        background-color: $very-dark-blue;
+    }
+  }
+  
+
+}
