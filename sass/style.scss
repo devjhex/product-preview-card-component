@@ -1,6 +1,7 @@
 @import "resets";
 @import "config";
 @import "mobile";
+@import "desktop";
 
 @mixin border-radius {
     border-radius: 10px;
@@ -10,4 +11,3 @@ body{
  background-color: $cream;
 }
 
-@import "desktop"
