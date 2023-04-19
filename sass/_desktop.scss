@@ -9,15 +9,13 @@
 .card__img_desktop{
     display: block;
     border-radius: 10px 0 0 10px;
-   block-size: auto;
-   object-fit: cover;
-   object-position: center;
 }
    .card{
-    width: 740px;
+    width: 760px;
+    height: 585px;
     display: grid;
-    grid-template-columns:2fr 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns:2fr 1.9fr;
+    grid-template-rows:60px 200px 110px 100px 100px;
     grid-template-areas: "img  figCap"
                          "img  prodHead"
                          "img  prodDesc"
@@ -26,22 +24,22 @@
 
     &__img-container{
         grid-area:img;
+        // height: 100%;
     }
     &__img-caption{
         grid-area: figCap;
-        padding: 40px;
+       margin-left: 20px;
+       margin-top: 10px;
     } 
     &__product-heading{
         grid-area: prodHead;
         font-size: 3rem;
-        margin-top: 0;
-        margin-left: 20px;
-        line-height: 0.9;
+        margin-left: 30px;
     }
     &__product-description{
         grid-area:prodDesc;
-        font-size: 1.1rem;
         margin-left: 20px;
+        font-size: 1.2rem;
     }
     &__price-tag-all{
         grid-area: priceTagAll;
@@ -50,7 +48,8 @@
     .button{
         grid-area: button;
         border-radius: 10px;
-        margin: 0 20px 15px 13px;
+        margin-top:20px;
+        margin-inline:auto;
         font-weight: 700;
         width: 300px;
         height: 60px;
